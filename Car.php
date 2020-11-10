@@ -72,9 +72,9 @@ class Car extends Vehicle implements LightableInterface
 
     public function start(): string
     {
-        return "tu démarre";
         if ($this->isHasParkBrake()=== true){
             throw new Exception('frein à main actif');
+        return "tu démarre";
         }
     }
     public function switchOn(): bool
@@ -87,3 +87,4 @@ class Car extends Vehicle implements LightableInterface
     }
 
 }
+
